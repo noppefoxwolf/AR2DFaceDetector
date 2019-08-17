@@ -1,9 +1,14 @@
 # AR2DFaceDetector
 
-[![CI Status](https://img.shields.io/travis/noppefoxwolf/AR2DFaceDetector.svg?style=flat)](https://travis-ci.org/noppefoxwolf/AR2DFaceDetector)
-[![Version](https://img.shields.io/cocoapods/v/AR2DFaceDetector.svg?style=flat)](https://cocoapods.org/pods/AR2DFaceDetector)
-[![License](https://img.shields.io/cocoapods/l/AR2DFaceDetector.svg?style=flat)](https://cocoapods.org/pods/AR2DFaceDetector)
-[![Platform](https://img.shields.io/cocoapods/p/AR2DFaceDetector.svg?style=flat)](https://cocoapods.org/pods/AR2DFaceDetector)
+## Usage
+
+```swift
+func session(_ session: ARSession, didUpdate frame: ARFrame) {
+  let detector = AR2DFaceDetector(frame: frame, orientation: .right)
+  let size = detector.capturedImage.extent.size
+  detector.faces.first?.landmarks.faceContour?.normalizedPoints
+}
+```
 
 ## Example
 

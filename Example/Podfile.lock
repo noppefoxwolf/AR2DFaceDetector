@@ -1,0 +1,16 @@
+PODS:
+  - AR2DFaceDetector (0.1.0)
+
+DEPENDENCIES:
+  - AR2DFaceDetector (from `../`)
+
+EXTERNAL SOURCES:
+  AR2DFaceDetector:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AR2DFaceDetector: df88780e4ccf4aa04f252a458bff71a23eb2994e
+
+PODFILE CHECKSUM: 4d068f29fa56a77c118b3206c17664bb7147fdc6
+
+COCOAPODS: 1.7.5
