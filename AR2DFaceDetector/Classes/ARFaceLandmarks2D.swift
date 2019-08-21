@@ -63,7 +63,7 @@ public class ARPerspectiveRegion2D {
     self.point = point
   }
   
-  func pointInImage(imageSize: CGSize) -> CGPoint {
+  public func pointInImage(imageSize: CGSize) -> CGPoint {
     return point.applying(.init(scaleX: imageSize.width, y: imageSize.height))
   }
 }
